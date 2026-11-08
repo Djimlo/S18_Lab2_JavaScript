@@ -63,17 +63,32 @@ function exemple3()
 function exemple4()
 { 	
 	retirerLesClasses();
+	let lesCartes = document.getElementsByTagName("li")
+	for (let i = 0; i < lesCartes.length; i++) {
+		lesCartes[i].className = "carreau"+(lesCartes.length-i);
+		
+	}
 }
 
 //=================================================================
 function exemple5()
 {   
 	retirerLesClasses();
+	let lesCartes = document.getElementsByTagName("li");
+	for (let i = 0; i < lesCartes.length; i++) {
+	
+			lesCartes[i].className = "trefle" +(2*i+1);	
+	}
+	
 }
 //=================================================================
 function exemple6()
 {   
 	retirerLesClasses();
+	let lesCartes = document.getElementsByTagName("li");
+	for (let i = 0; i < lesCartes.length; i++) {
+			lesCartes[i].className = "carreau"+(i%3 +1);	
+	}
 }
 
 //=================================================================
