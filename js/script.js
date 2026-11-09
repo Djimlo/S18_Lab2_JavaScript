@@ -110,6 +110,11 @@ function exemple7()
 function exemple8()
 {   
 	retirerLesClasses();
+	let lesCartes = document.getElementsByTagName("li");
+	for (let i = 0; i < lesCartes.length; i++) {
+		let valeur = randNumber(13)+1;   // un nombre au hasard de 1 à 13
+		lesCartes[i].className = "carreau" + valeur;
+	}
 }
 
 //=================================================================
