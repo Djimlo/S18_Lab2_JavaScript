@@ -95,6 +95,15 @@ function exemple6()
 function exemple7()
 {   
 	retirerLesClasses();
+	let lesCartes = document.getElementsByTagName("li");
+	for (let i = 0; i < lesCartes.length; i++) {
+		if (i%2 == 0) {
+			lesCartes[i].className = "pique"+(i+1);
+		}
+		else{
+			lesCartes[i].className = "coeur"+(i+1);
+		}
+	}
 }
 
 //=================================================================
